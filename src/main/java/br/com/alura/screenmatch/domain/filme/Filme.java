@@ -4,13 +4,13 @@ public class Filme {
 
     private String nome;
     private Integer duracaoEmMinutos;
-    private Integer anoLancamenteo;
+    private Integer anoLancamento;
     private String genero;
 
     public Filme(DadosCadastroFilme dados) {
         this.nome = dados.nome();
         this.duracaoEmMinutos = dados.duracao();
-        this.anoLancamenteo = dados.ano();
+        this.anoLancamento = dados.ano();
         this.genero = dados.genero();
     }
 
@@ -19,7 +19,7 @@ public class Filme {
         return "Filme{" +
                 "nome='" + nome + '\'' +
                 ", duracaoEmMinutos=" + duracaoEmMinutos +
-                ", anoLancamenteo=" + anoLancamenteo +
+                ", anoLancamenteo=" + anoLancamento +
                 ", genero='" + genero + '\'' +
                 '}';
     }
@@ -32,8 +32,8 @@ public class Filme {
         return duracaoEmMinutos;
     }
 
-    public Integer getAnoLancamenteo() {
-        return anoLancamenteo;
+    public Integer getAnoLancamento() {
+        return anoLancamento;
     }
 
     public String getGenero() {
